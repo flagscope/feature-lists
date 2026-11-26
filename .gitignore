@@ -1,0 +1,9 @@
+# Never committed: symbol files, binaries, logs, and local files (see CONTRIBUTING.md)
+*.pdb
+*.dll
+*.exe
+*.log
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
