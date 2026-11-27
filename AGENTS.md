@@ -11,4 +11,4 @@ The rules for this repository live in [`CONTRIBUTING.md`](CONTRIBUTING.md). They
 
 ## Where decisions live
 
-This repository holds data only. The decisions that govern it (layout, file format, license) are recorded in the flagscope repository: `docs/features/published-lists/decisions.md` (AD-16) in https://github.com/flagscope/flagscope.
+This repository holds lists, the files that describe it, and the format check in `.github/`. The decisions that govern it are recorded in the flagscope repository (https://github.com/flagscope/flagscope): layout, file format, and license in `docs/features/published-lists/decisions.md` (AD-16); the format check in `docs/features/list-format-check/` (stories HU-18 and HU-19, decisions AD-25 and AD-26).
