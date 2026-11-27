@@ -9,6 +9,7 @@ These rules are mandatory for every contributor, human or automated. Pull reques
 - The file is committed exactly as flagscope wrote it: header lines, sorting, and line format unchanged.
 - A list that already exists is replaced only to fix an error, with the reason in the pull request description.
 - The pull request description states how the build was identified (`winver` output) and the flagscope version used.
+- Every pull request runs the "List format" check on the lists it adds or modifies (AD-25 and AD-26 in flagscope). Fix what it reports before asking for review.
 
 ## License and sign-off
 
@@ -36,6 +37,6 @@ These rules are mandatory for every contributor, human or automated. Pull reques
 
 ## Repository content
 
-- Only lists and the files that describe this repository are committed.
+- Only lists, the files that describe this repository, and the automated checks in `.github/` are committed.
 - Never committed: credentials, tokens, personal data, machine-specific paths or user names, symbol files (`*.pdb`), Windows binaries, logs, and editor or operating-system files.
 - A secret that reaches a commit is treated as leaked: revoke and rotate it first, then remove it from the history.

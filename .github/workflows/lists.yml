@@ -1,0 +1,24 @@
+name: Checks
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  list-format:
+    name: List format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - name: Check the lists this pull request adds or modifies
+        shell: bash
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git diff --name-only --no-renames --diff-filter=d -z "origin/$BASE_REF...HEAD" \
+            | xargs -0 python3 .github/scripts/check_lists.py
