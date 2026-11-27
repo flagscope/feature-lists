@@ -39,3 +39,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). In short: scan your build with flagscope
 ## License
 
 The lists are dedicated to the public domain under [CC0-1.0](LICENSE). Feature names and IDs come from Microsoft's public symbol files and Windows binaries; this repository is not affiliated with Microsoft.
+
+Test change for CA-18.4; this pull request is closed without merging.
